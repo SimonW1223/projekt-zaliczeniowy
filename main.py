@@ -19,10 +19,10 @@ def add_customer(dish: Dish):
     menu.append(dish)
     return {"message": "Danie zostało dodane do menu"}
 
-@app.delete("/customers/{dish_index}")
-def remove_customer(dish_index: int):
-    if dish_index >= 0 and dish_index < len(menu):
-        removed_dish = menu.pop(dish_index)
+@app.delete("/customers/{customer_id}")
+def remove_customer(customer_id: int):
+    if customer_id >= 0 and customer_id < len(menu):
+        removed_dish = menu.pop(customer_id)
         return {"message": f"Danie '{removed_dish.name}' zostało usunięte z menu"}
     else:
         return {"error": "Spróbuj ponownie"}
