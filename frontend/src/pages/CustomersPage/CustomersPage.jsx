@@ -10,16 +10,6 @@ import { navigationLinks } from "../../config/navigationLinks";
 export const CustomersPage = () => {
   const [customersData, setCustomersData] = useState([]);
 
-  //sposób 1
-  // const fetchCustomersData = async () => {
-  //   const response = await fetch("http://127.0.0.1:8000/customers");
-  //   console.log(response);
-  //   const data = await response.json();
-  //   console.log(data);
-  //   setCustomersData(data);
-  // };
-
-  // sposób 2
   const fetchCustomersData = () => {
     fetch("http://127.0.0.1:8000/customers")
       .then((res) => res.json())

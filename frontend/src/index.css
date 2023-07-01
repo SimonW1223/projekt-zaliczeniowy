@@ -76,7 +76,6 @@
     @apply bg-background text-foreground;
   }
 }
-/* style */
 
 .addCustomerForm {
   display: flex;
