@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import "./index.css";
+import "./stylesheet.css";
 import { Layout } from "@/components/Layout";
 import { DashboardPage, CustomersPage } from "@/pages";
 import { AddCustomerPage } from "./pages/AddCustomerPage";
