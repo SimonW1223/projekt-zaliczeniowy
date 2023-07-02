@@ -1,9 +1,6 @@
 import { useState, useEffect } from "react";
 
 import { MainNav } from "@/components/MainNav";
-
-import { DataTable } from "./components/DataTable";
-import { Columns } from "./components/Columns";
 import { UserNav } from "./components/UserNav";
 import { navigationLinks } from "../../config/navigationLinks";
 
@@ -35,23 +32,23 @@ export const CustomersPage = () => {
           <h2 className="text-3xl font-bold tracking-tight">Customers</h2>
         </div>
         <div className="hidden h-full flex-1 flex-col space-y-8 md:flex">
-          <ul className="customersList">
+          <ul className="Customers_List">
             {customersData.map((item) => (
               <li key={item.id}>
                 <p>
-                  <strong>Name: </strong>
+                  <b>Name: </b>
                   {item.name}
                 </p>
                 <p>
-                  <strong>Surname: </strong>
+                  <b>Surname: </b>
                   {item.surname}
                 </p>
                 <p>
-                  <strong>Email: </strong>
+                  <b>E-mail: </b>
                   {item.email}
                 </p>
                 <p>
-                  <strong>Phone number: </strong>
+                  <b>Phone number: </b>
                   {item.phone_number}
                 </p>
               </li>

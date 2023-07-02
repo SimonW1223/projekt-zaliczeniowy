@@ -72,7 +72,7 @@ export const AddCustomerPage = () => {
         </div>
         <div className="hidden h-full flex-1 flex-col space-y-8 md:flex"></div>
       </div>
-      <form onSubmit={submitFormHandler} className="addCustomerForm">
+      <form onSubmit={submitFormHandler} className="Add_Customer">
         <label>Name</label>
         <input
           onChange={getName}

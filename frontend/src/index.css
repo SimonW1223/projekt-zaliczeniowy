@@ -77,57 +77,59 @@
   }
 }
 
-.addCustomerForm {
+.Add_Customer {
   display: flex;
-  padding: 2rem;
   flex-direction: column;
-  border-radius: 0.125rem;
   border-width: 1px;
-  gap: 1.25rem;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 15px;
 }
 
-.addCustomerForm label {
+.Add_Customer label {
   font-size: 16px;
   font-weight: 600;
+  padding-top: 10px;
 }
 
-.addCustomerForm input {
-  padding: 5px;
-  border-radius: 0.125rem;
+.Add_Customer input {
+  padding: 10px;
   border-width: 1px;
+  border-radius: 15px;
 }
 
-.addCustomerForm input:focus {
-  outline: none;
+.Add_Customer input:focus {
+  outline: solid;
 }
 
-.addCustomerForm button {
+.Add_Customer button {
   width: 160px;
   padding: 8px;
-  border-radius: 0.125rem;
   background-color: black;
   color: white;
+  border-radius: 15px;
 }
 
-.customersList {
+.Customers_List {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
-  padding: 2rem;
-  border-radius: 0.125rem;
+  gap: 20px;
+  padding: 20px;
   border-width: 1px;
   list-style-type: none;
+  border-radius: 15px;
 }
 
-.customersList li {
+.Customers_List li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
-  border-radius: 0.125rem;
+  padding: 10px;
   border-width: 1px;
+  background-color: ghostwhite;
+  border-radius: 15px;
 }
 
-.customersList li p {
-  font-size: 16px;
+.Customers_List li p {
+  font-size: 14px;
 }
